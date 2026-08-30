@@ -423,6 +423,9 @@ h1, h2, .display {
 .caption { margin-top: 12px; color: #5b686c; font-size: .83rem; }
 .arrival-notes h2 { font-size: clamp(2.8rem, 5vw, 5rem); }
 .arrival-lead { margin-bottom: 26px; color: #31434b; font-size: 1.08rem; }
+.arrival-tips-wrap { grid-column: 1 / -1; }
+.arrival-tips { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); column-gap: var(--space-grid); }
+.arrival-tips .number-row { align-content: start; }
 .arrival-source-note { margin: 24px 0 0; padding: 18px 20px; color: #3f5057; background: #e9e2d3; border-left: 3px solid var(--teal-dark); font-size: .86rem; }
 .arrival-source-note strong { color: var(--ink); }
 .arrival-cta { margin: 24px 0 0; }
