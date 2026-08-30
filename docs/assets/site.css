@@ -392,6 +392,9 @@ h1, h2, .display {
 .integration-card p { color: #46555b; }
 .integration-card .status { display: inline-flex; padding: 6px 10px; color: #704015; background: #f8dfaa; border-radius: 999px; font-size: .7rem; font-weight: 800; letter-spacing: .1em; text-transform: uppercase; }
 .integration-card .status-live { color: #07564e; background: #c7eee7; }
+.wufoo-shell { min-height: 720px; margin-top: 16px; padding: 16px; overflow: hidden; border: 1px solid var(--line); background: #fff; }
+.wufoo-shell iframe { display: block; width: 100% !important; max-width: 100%; border: 0; }
+.form-fallback { margin: 12px 0 0; color: #46555b; font-size: .8rem; }
 .contact-alternative { margin: 18px 0 0; font-size: .9rem; }
 .text-link { color: var(--teal-dark); font-weight: 800; text-underline-offset: 4px; }
 .text-link:hover { text-decoration-thickness: 3px; }
@@ -564,6 +567,7 @@ details p { max-width: 760px; padding-bottom: 18px; color: #46555b; }
   .contact-layout > *, .form-panel, .next-panel { padding: 36px 22px; }
   .integration-card { padding: 20px; }
   .integration-card .button { width: 100%; }
+  .wufoo-shell { min-height: 760px; padding: 8px; }
   .gallery-ribbon { grid-template-columns: 1fr; gap: 16px; padding: 18px 22px 22px; }
   .gallery-ribbon-images { height: 116px; }
   .gallery-ribbon-action { grid-column: 1; grid-row: 3; }
