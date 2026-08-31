@@ -406,8 +406,6 @@ h1, h2, .display {
 .step { display: grid; grid-template-columns: 46px 1fr; gap: 16px; padding: 19px 0; border-top: 1px solid rgba(255,255,255,.18); }
 .step-number { display: grid; place-items: center; width: 38px; height: 38px; color: var(--teal); border: 1px solid rgba(255,255,255,.35); border-radius: 50%; font-size: .75rem; font-weight: 800; }
 .step p { color: rgba(255,255,255,.7); }
-.waiver-card { margin-top: 24px; padding: 20px; border-left: 3px solid var(--gold); background: rgba(255,255,255,.07); }
-.waiver-card p { color: rgba(255,255,255,.72); }
 
 .arrival-hero { position: relative; min-height: 560px; display: grid; align-items: end; color: #fff; overflow: hidden; }
 .arrival-hero img { position: absolute; width: 100%; height: 100%; object-fit: cover; }
