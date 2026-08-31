@@ -28,7 +28,23 @@
         <script>
           var z1ubf3f31sau775;
           (function(d,t){
-            var s=d.createElement(t),options={'userName':'hulahoopcamp','formHash':'z1ubf3f31sau775','autoResize':true,'height':'920','async':true,'host':'wufoo.com','header':'show','ssl':true};
+            var submitPendingUntil=0,confirmationHeightCeiling=1600;
+            function redirectAfterConfirmedResize(height){
+              var measured=parseInt(height,10);
+              if(Date.now()<=submitPendingUntil&&measured>0&&measured<confirmationHeightCeiling){
+                window.location.replace('/thanks/');
+              }
+            }
+            window.addEventListener('message',function(event){
+              if(event.origin==='https://hulahoopcamp.wufoo.com'&&event.data==='formSubmitted'){
+                submitPendingUntil=Date.now()+30000;
+                window.setTimeout(function(){
+                  var frame=d.getElementById('wufooFormz1ubf3f31sau775');
+                  redirectAfterConfirmedResize(frame?frame.getAttribute('height'):0);
+                },250);
+              }
+            });
+            var s=d.createElement(t),options={'userName':'hulahoopcamp','formHash':'z1ubf3f31sau775','autoResize':true,'height':'920','async':true,'host':'wufoo.com','header':'show','ssl':true,'resizeDone':redirectAfterConfirmedResize};
             s.src=('https:'==d.location.protocol?'https://':'http://')+'secure.wufoo.com/scripts/embed/form.js';
             s.onload=s.onreadystatechange=function(){var rs=this.readyState;if(rs)if(rs!='complete')if(rs!='loaded')return;try{z1ubf3f31sau775=new WufooForm();z1ubf3f31sau775.initialize(options);z1ubf3f31sau775.display()}catch(e){}};
             var scr=d.getElementsByTagName(t)[0],par=scr.parentNode;par.insertBefore(s,scr)
