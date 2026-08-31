@@ -389,13 +389,6 @@ h1, h2, .display {
 .form-panel h2 { max-width: 12ch; font-size: clamp(2.8rem, 4.4vw, 4.35rem); }
 .wufoo-shell { min-height: 720px; margin-top: 16px; padding: 16px; overflow: hidden; border: 1px solid var(--line); background: #fff; }
 .wufoo-shell iframe { display: block; width: 100% !important; max-width: 100%; border: 0; }
-.wufoo-shell.is-submitted { min-height: 0; padding: 0; border: 0; background: transparent; }
-.form-thanks { padding: 28px; border: 1px solid var(--line); background: var(--paper-bright); }
-.form-thanks .status { display: inline-flex; padding: 6px 10px; color: #704015; background: #f8dfaa; border-radius: 999px; font-size: .7rem; font-weight: 800; letter-spacing: .1em; text-transform: uppercase; }
-.form-thanks .status-live { color: #07564e; background: #c7eee7; }
-.form-thanks:focus { outline: 3px solid rgba(0,139,132,.35); outline-offset: 3px; }
-.form-thanks h3 { margin: 14px 0 8px; font-size: 1.7rem; }
-.form-thanks p { max-width: 560px; color: #3f5057; }
 .form-fallback { margin: 12px 0 0; color: #46555b; font-size: .8rem; }
 .contact-alternative { margin: 18px 0 0; font-size: .9rem; }
 .text-link { color: var(--teal-dark); font-weight: 800; text-underline-offset: 4px; }
