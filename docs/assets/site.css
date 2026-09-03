@@ -391,6 +391,9 @@ h1, h2, .display {
 .wufoo-shell iframe { display: block; width: 100% !important; max-width: 100%; border: 0; }
 .form-fallback { margin: 12px 0 0; color: #46555b; font-size: .8rem; }
 .contact-alternative { margin: 18px 0 0; font-size: .9rem; }
+.capacity-note { margin-top: 24px; padding: 20px 0; border-block: 1px solid var(--line); }
+.capacity-note strong { font-family: var(--sans); font-size: 1.05rem; }
+.capacity-note p { margin: 6px 0 0; color: var(--ink); }
 .text-link { color: var(--teal-dark); font-weight: 800; text-underline-offset: 4px; }
 .text-link:hover { text-decoration-thickness: 3px; }
 
